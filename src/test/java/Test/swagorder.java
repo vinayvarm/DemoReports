@@ -1,5 +1,6 @@
 package Test;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,9 +18,11 @@ public class swagorder {
 		
 	WebDriverManager.chromedriver().setup();
 	driver= new ChromeDriver();
+	
 	driver.get("https://www.saucedemo.com/");
 	driver.findElement(By.id("user-name")).sendKeys("standard_user");
 	Thread.sleep(1000);
+
 	driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("secret_sauce");
 	Thread.sleep(1000);
 	driver.findElement(By.xpath("//input[@id=\"login-button\"]")).click();
@@ -28,7 +31,7 @@ public class swagorder {
 	
 	@Test(priority=2)
 	public static void addToCart() throws InterruptedException {
-		
+	
 	driver.findElement(By.xpath("//a[@id=\"item_4_title_link\"]/div")).click();
 	Thread.sleep(1000);
 	driver.findElement(By.xpath("//button[@id=\"add-to-cart-sauce-labs-backpack\"]")).click();
@@ -38,8 +41,10 @@ public class swagorder {
 	}
 	@Test(priority=3)
 	public static void checkout() throws InterruptedException {
+
 		driver.findElement(By.id("checkout")).click();
 		Thread.sleep(1000);
+
 		driver.findElement(By.id("first-name")).sendKeys("vinay");
 		Thread.sleep(1000);
 		driver.findElement(By.id("last-name")).sendKeys("varma");
