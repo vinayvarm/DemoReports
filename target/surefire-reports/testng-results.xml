@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Testing Google Apps" duration-ms="57335" started-at="2022-01-10T11:41:41Z" finished-at="2022-01-10T11:42:38Z">
+    <groups>
+    </groups>
+    <test name="Regression" duration-ms="57335" started-at="2022-01-10T11:41:41Z" finished-at="2022-01-10T11:42:38Z">
+      <class name="Test.BuyingBook">
+        <test-method status="PASS" signature="addBook()[pri:1, instance:Test.BuyingBook@366e2eef]" name="addBook" duration-ms="25768" started-at="2022-01-10T11:42:07Z" finished-at="2022-01-10T11:42:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+      </class> <!-- Test.BuyingBook -->
+      <class name="Test.swagorder">
+        <test-method status="PASS" signature="login()[pri:1, instance:Test.swagorder@6df97b55]" name="login" duration-ms="5908" started-at="2022-01-10T11:42:32Z" finished-at="2022-01-10T11:42:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- Test.swagorder -->
+      <class name="Test.ApplyCoupunCode">
+        <test-method status="PASS" signature="addBookToCart()[pri:1, instance:Test.ApplyCoupunCode@34b7bfc0]" name="addBookToCart" duration-ms="25621" started-at="2022-01-10T11:41:41Z" finished-at="2022-01-10T11:42:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBookToCart -->
+      </class> <!-- Test.ApplyCoupunCode -->
+    </test> <!-- Regression -->
+  </suite> <!-- Testing Google Apps -->
+</testng-results>
